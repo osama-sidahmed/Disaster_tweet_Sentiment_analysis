@@ -1,0 +1,5 @@
+,estimator,vectorizer,model,params,train_score,test_score
+0,clf_bow_lr_lemma,"CountVectorizer(min_df=0.0005, ngram_range=(1, 2), stop_words='english')","LogisticRegression(C=1, max_iter=100000)","{'est__C': 1, 'vec_pipe__vec__min_df': 0.0005, 'vec_pipe__vec__ngram_range': (1, 2)}",0.8827540808954681,0.8735024665257224
+1,clf_tfidf_lr_lemma,"TfidfVectorizer(min_df=0.0005, ngram_range=(1, 2), stop_words='english')","LogisticRegression(C=10, max_iter=100000)","{'est__C': 10, 'vec_pipe__vec__min_df': 0.0005, 'vec_pipe__vec__ngram_range': (1, 2)}",0.8826365030812425,0.8713883016208598
+2,clf_bow_SVC_lemma,"CountVectorizer(min_df=0.0005, ngram_range=(1, 2), stop_words='english')","SVC(C=10, max_iter=100000)","{'est__C': 10, 'vec_pipe__vec__min_df': 0.0005, 'vec_pipe__vec__ngram_range': (1, 2)}",0.888744477327285,0.8766737138830162
+3,clf_tfidf_SVC_lemma,"CountVectorizer(min_df=0.0005, ngram_range=(1, 2), stop_words='english')","SVC(C=10, max_iter=100000)","{'est__C': 10, 'vec_pipe__vec__min_df': 0.0005, 'vec_pipe__vec__ngram_range': (1, 2)}",0.888744477327285,0.8766737138830162
