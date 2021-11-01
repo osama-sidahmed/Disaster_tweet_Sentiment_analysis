@@ -8,12 +8,11 @@ st.title("Disaster Tweet Classifier")
 import numpy as np
 import pandas as pd
 import joblib
-
 from tensorflow import keras
 
 '''
 
-#### This page classifies tweets based on whether the tweet corresponds to a real disaster or not. 
+#### This application classifies tweets based on whether the tweet corresponds to a real disaster or not. 
 #### The classifier employes Deep Learning algorithms based on Natural Language Processing to classify tweets.
 
 ***
@@ -37,7 +36,7 @@ model = load_model('data/pickle/model/', 2)
 text = st.text_input('', 'This is the biggest disaster ever!')
 processed_text = preprocessing.transform({text}).todense()
 prediction = model.predict(processed_text)
-if prediction < 0.4:
+if prediction < 0.45:
     'Are you kidding me, this is not a real disaster tweet!'
 elif prediction >= 0.45 and prediction <= 0.55:
     'hmmm, I am not sure!'
